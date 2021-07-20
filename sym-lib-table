@@ -1,3 +1,0 @@
-(sym_lib_table
-  (lib (name "ingot")(type "KiCad")(uri "${KIPRJMOD}/ingot.kicad_sym")(options "")(descr ""))
-)

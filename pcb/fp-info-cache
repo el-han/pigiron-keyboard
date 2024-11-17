@@ -1,4 +1,4 @@
-24255527964639761
+24274642319665923
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -98000,6 +98000,13 @@ CUTOUT_CHERRY_MX_2.00u_Vertical
 0
 0
 blackwing
+CUTOUT_CHERRY_MX_6.00u
+Cherry MX keyswitch, 6.25u, PCB mount, http://cherryamericas.com/wp-content/uploads/2014/12/mx_cat.pdf
+Cherry MX keyswitch 6.25u PCB
+0
+0
+0
+blackwing
 CUTOUT_CHERRY_MX_6.25u
 Cherry MX keyswitch, 6.25u, PCB mount, http://cherryamericas.com/wp-content/uploads/2014/12/mx_cat.pdf
 Cherry MX keyswitch 6.25u PCB
@@ -98160,6 +98167,76 @@ COMM-SMD_RP2040-ZERO
 0
 23
 23
+easyeda2kicad
+LED-SMD_4P-L2.0-W2.0-BR-1
+
+
+0
+4
+4
+easyeda2kicad
+LED-SMD_4P-L5.0-W5.0-LS5.4-TL-1
+
+
+0
+4
+4
+easyeda2kicad
+SMD_KEYBOARD-SW-1.00
+
+
+0
+2
+2
+easyeda2kicad
+SMD_KEYBOARD-SW-1.25
+
+
+0
+2
+2
+easyeda2kicad
+SMD_KEYBOARD-SW-1.50
+
+
+0
+2
+2
+easyeda2kicad
+SMD_KEYBOARD-SW-1.75
+
+
+0
+2
+2
+easyeda2kicad
+SMD_KEYBOARD-SW-2.00
+
+
+0
+2
+2
+easyeda2kicad
+SMD_KEYBOARD-SW-6.00
+
+
+0
+2
+2
+easyeda2kicad
+SMD_KEYBOARD-SW-ENTER-ISO
+
+
+0
+2
+2
+easyeda2kicad
+SOD-323_L1.8-W1.3-LS2.5-RD
+
+
+0
+2
+2
 easyeda2kicad
 SOP-14_L8.6-W3.9-P1.27-LS6.0-BL
 

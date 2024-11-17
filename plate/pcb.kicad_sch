@@ -5,36 +5,30 @@
 	(uuid "3c66c4c7-c51a-454a-a9fb-c58ed70b636d")
 	(paper "A4")
 	(lib_symbols
-		(symbol "easyeda2kicad:CPG151101S11-16_C41430893"
-			(exclude_from_sim no)
-			(in_bom yes)
+		(symbol "Mechanical:MountingHole_Pad"
+			(pin_numbers hide)
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim yes)
+			(in_bom no)
 			(on_board yes)
-			(property "Reference" "U"
-				(at 0 5.08 0)
+			(property "Reference" "H"
+				(at 0 6.35 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "CPG151101S11-16_C41430893"
-				(at 0 -5.08 0)
+			(property "Value" "MountingHole_Pad"
+				(at 0 4.445 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Footprint" "easyeda2kicad:SMD_KEYBOARD-SW"
-				(at 0 -7.62 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
+			(property "Footprint" ""
 				(at 0 0 0)
 				(effects
 					(font
@@ -43,7 +37,117 @@
 					(hide yes)
 				)
 			)
-			(property "Description" ""
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Mounting Hole with connection"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*Pad*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MountingHole_Pad_0_1"
+				(circle
+					(center 0 1.27)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "MountingHole_Pad_1_1"
+				(pin input line
+					(at 0 -2.54 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "easyeda2kicad:SW_CUTOUT"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "SW1"
+				(at 1.27 8.89 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "SW_Diode"
+				(at 1.27 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Footprint" "blackwing:CUTOUT_CHERRY_MX_1.00u"
+				(at 0 -7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Push button switch, generic, two pins"
 				(at 0 0 0)
 				(effects
 					(font
@@ -61,11 +165,23 @@
 					(hide yes)
 				)
 			)
-			(symbol "CPG151101S11-16_C41430893_0_1"
+			(symbol "SW_CUTOUT_0_1"
 				(arc
 					(start 0 0)
 					(mid 0 0)
 					(end 0 0)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 0) (xy -5.08 0)
+					)
 					(stroke
 						(width 0)
 						(type default)
@@ -98,6 +214,18 @@
 						(type none)
 					)
 				)
+				(polyline
+					(pts
+						(xy 2.54 0) (xy 5.08 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 				(arc
 					(start 1.27 0)
 					(mid 1.27 0)
@@ -111,11 +239,87 @@
 					)
 				)
 			)
-			(symbol "CPG151101S11-16_C41430893_1_1"
-				(pin passive line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "1"
+		)
+		(symbol "power:GND"
+			(power)
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "GND_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -130,17 +334,81 @@
 						)
 					)
 				)
-				(pin passive line
-					(at 5.08 0 180)
-					(length 2.54)
-					(name "2"
+			)
+		)
+		(symbol "power:PWR_FLAG"
+			(power)
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "2"
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -149,20 +417,30 @@
 					)
 				)
 			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
 		)
 	)
-	(wire
-		(pts
-			(xy 184.15 88.9) (xy 190.5 88.9)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "2cf83a97-5b3f-41d8-9698-4b89b037673d")
+	(junction
+		(at 149.86 110.49)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1301a2d9-5ac9-4a9d-8adb-5b5fe3d56bfa")
 	)
 	(symbol
-		(lib_id "easyeda2kicad:CPG151101S11-16_C41430893")
+		(lib_id "easyeda2kicad:SW_CUTOUT")
 		(at 125.73 101.6 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -225,12 +503,6 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "aff3a908-81e9-4535-b9a9-5cf0579201c5")
-		)
-		(pin "2"
-			(uuid "2daf2ac0-96ce-43b9-b5bd-92b172de8336")
-		)
 		(instances
 			(project ""
 				(path "/3c66c4c7-c51a-454a-a9fb-c58ed70b636d"
@@ -241,7 +513,7 @@
 		)
 	)
 	(symbol
-		(lib_id "easyeda2kicad:CPG151101S11-16_C41430893")
+		(lib_id "easyeda2kicad:SW_CUTOUT")
 		(at 163.83 25.4 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -304,12 +576,6 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "d28dc1b6-a0e4-4bca-9468-cdecb8e60aa3")
-		)
-		(pin "2"
-			(uuid "8773a22c-7cdc-47f2-9ee8-12e8b8edd6f6")
-		)
 		(instances
 			(project ""
 				(path "/3c66c4c7-c51a-454a-a9fb-c58ed70b636d"
@@ -320,7 +586,7 @@
 		)
 	)
 	(symbol
-		(lib_id "easyeda2kicad:CPG151101S11-16_C41430893")
+		(lib_id "easyeda2kicad:SW_CUTOUT")
 		(at 195.58 88.9 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -383,12 +649,6 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "8cec5dda-101b-4b40-91ed-f38fd9874ff1")
-		)
-		(pin "2"
-			(uuid "0c74a3c5-afa3-48fb-8a85-62cad96fb568")
-		)
 		(instances
 			(project ""
 				(path "/3c66c4c7-c51a-454a-a9fb-c58ed70b636d"
@@ -399,7 +659,7 @@
 		)
 	)
 	(symbol
-		(lib_id "easyeda2kicad:CPG151101S11-16_C41430893")
+		(lib_id "easyeda2kicad:SW_CUTOUT")
 		(at 87.63 63.5 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -462,12 +722,6 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "606454a2-6827-40f5-9078-cc8a7a3fd7e0")
-		)
-		(pin "2"
-			(uuid "6e56f586-21b4-47d8-950c-b4817b267141")
-		)
 		(instances
 			(project ""
 				(path "/3c66c4c7-c51a-454a-a9fb-c58ed70b636d"
@@ -478,7 +732,7 @@
 		)
 	)
 	(symbol
-		(lib_id "easyeda2kicad:CPG151101S11-16_C41430893")
+		(lib_id "easyeda2kicad:SW_CUTOUT")
 		(at 176.53 25.4 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -541,12 +795,6 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "89e2cd6a-adc1-4e4f-a210-3d05b52b439d")
-		)
-		(pin "2"
-			(uuid "29ab732f-603a-4369-9eb6-400b67042435")
-		)
 		(instances
 			(project ""
 				(path "/3c66c4c7-c51a-454a-a9fb-c58ed70b636d"
@@ -557,7 +805,7 @@
 		)
 	)
 	(symbol
-		(lib_id "easyeda2kicad:CPG151101S11-16_C41430893")
+		(lib_id "easyeda2kicad:SW_CUTOUT")
 		(at 208.28 88.9 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -620,12 +868,6 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "3a08570e-1d50-4f5e-8273-24165dcc0de2")
-		)
-		(pin "2"
-			(uuid "e2f62895-a7ed-4daa-934c-f501190c8374")
-		)
 		(instances
 			(project ""
 				(path "/3c66c4c7-c51a-454a-a9fb-c58ed70b636d"
@@ -636,7 +878,7 @@
 		)
 	)
 	(symbol
-		(lib_id "easyeda2kicad:CPG151101S11-16_C41430893")
+		(lib_id "easyeda2kicad:SW_CUTOUT")
 		(at 113.03 88.9 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -699,12 +941,6 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "6a386033-f09b-481a-ac47-30ad4da7f1c9")
-		)
-		(pin "2"
-			(uuid "8b8ebfb6-5195-434f-ac76-759ecdfe71ba")
-		)
 		(instances
 			(project ""
 				(path "/3c66c4c7-c51a-454a-a9fb-c58ed70b636d"
@@ -715,7 +951,7 @@
 		)
 	)
 	(symbol
-		(lib_id "easyeda2kicad:CPG151101S11-16_C41430893")
+		(lib_id "easyeda2kicad:SW_CUTOUT")
 		(at 100.33 50.8 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -778,12 +1014,6 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "91da7ad7-0092-4898-842b-86e90945755a")
-		)
-		(pin "2"
-			(uuid "175ffdf3-01e2-4c1f-a702-27f081eb3d3c")
-		)
 		(instances
 			(project ""
 				(path "/3c66c4c7-c51a-454a-a9fb-c58ed70b636d"
@@ -794,7 +1024,74 @@
 		)
 	)
 	(symbol
-		(lib_id "easyeda2kicad:CPG151101S11-16_C41430893")
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 149.86 107.95 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "08620e54-7217-4a31-ba32-586e7ff7e415")
+		(property "Reference" "H1"
+			(at 152.4 105.4099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 152.4 107.9499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "blackwing:dummy_via"
+			(at 149.86 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 149.86 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 149.86 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ff1080da-52c5-44a4-98c9-293b5cd52c08")
+		)
+		(instances
+			(project ""
+				(path "/3c66c4c7-c51a-454a-a9fb-c58ed70b636d"
+					(reference "H1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "easyeda2kicad:SW_CUTOUT")
 		(at 74.93 76.2 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -857,12 +1154,6 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "49d72081-fba4-4732-bcce-67c08d8f29be")
-		)
-		(pin "2"
-			(uuid "ac8e56cf-615f-48aa-8a68-2565cb0c8e65")
-		)
 		(instances
 			(project ""
 				(path "/3c66c4c7-c51a-454a-a9fb-c58ed70b636d"
@@ -873,7 +1164,7 @@
 		)
 	)
 	(symbol
-		(lib_id "easyeda2kicad:CPG151101S11-16_C41430893")
+		(lib_id "easyeda2kicad:SW_CUTOUT")
 		(at 30.48 76.2 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -936,12 +1227,6 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "f9bd1dcb-267f-4071-aa5f-dd9e730d5345")
-		)
-		(pin "2"
-			(uuid "caed647c-c295-4983-8bc3-3ce263a2b433")
-		)
 		(instances
 			(project ""
 				(path "/3c66c4c7-c51a-454a-a9fb-c58ed70b636d"
@@ -952,7 +1237,7 @@
 		)
 	)
 	(symbol
-		(lib_id "easyeda2kicad:CPG151101S11-16_C41430893")
+		(lib_id "easyeda2kicad:SW_CUTOUT")
 		(at 243.84 76.2 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -1015,12 +1300,6 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "a7a29ed5-7032-4b79-9274-0aa5098a73f2")
-		)
-		(pin "2"
-			(uuid "777c347f-5205-4d94-a7e4-0fe91a4db435")
-		)
 		(instances
 			(project ""
 				(path "/3c66c4c7-c51a-454a-a9fb-c58ed70b636d"
@@ -1031,7 +1310,7 @@
 		)
 	)
 	(symbol
-		(lib_id "easyeda2kicad:CPG151101S11-16_C41430893")
+		(lib_id "easyeda2kicad:SW_CUTOUT")
 		(at 49.53 101.6 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -1094,12 +1373,6 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "7650caae-276d-488b-9a5b-412afd17def9")
-		)
-		(pin "2"
-			(uuid "c5d8d4b5-0a7f-4268-be89-81139369574f")
-		)
 		(instances
 			(project ""
 				(path "/3c66c4c7-c51a-454a-a9fb-c58ed70b636d"
@@ -1110,7 +1383,7 @@
 		)
 	)
 	(symbol
-		(lib_id "easyeda2kicad:CPG151101S11-16_C41430893")
+		(lib_id "easyeda2kicad:SW_CUTOUT")
 		(at 208.28 50.8 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -1173,12 +1446,6 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "e46a7f89-13f5-4121-9a3b-8bd5d41a7e78")
-		)
-		(pin "2"
-			(uuid "f51face1-75e8-4834-a0ca-4dd81d134273")
-		)
 		(instances
 			(project ""
 				(path "/3c66c4c7-c51a-454a-a9fb-c58ed70b636d"
@@ -1189,7 +1456,7 @@
 		)
 	)
 	(symbol
-		(lib_id "easyeda2kicad:CPG151101S11-16_C41430893")
+		(lib_id "easyeda2kicad:SW_CUTOUT")
 		(at 163.83 63.5 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -1252,12 +1519,6 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "75eccc67-8539-4afb-84ab-175045c5d629")
-		)
-		(pin "2"
-			(uuid "d64a3dd3-e69b-4a80-bfcd-bc4ae645dfd1")
-		)
 		(instances
 			(project ""
 				(path "/3c66c4c7-c51a-454a-a9fb-c58ed70b636d"
@@ -1268,7 +1529,7 @@
 		)
 	)
 	(symbol
-		(lib_id "easyeda2kicad:CPG151101S11-16_C41430893")
+		(lib_id "easyeda2kicad:SW_CUTOUT")
 		(at 62.23 63.5 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -1331,12 +1592,6 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "2c13decf-56ef-47ab-97b9-0dd4a9124d9e")
-		)
-		(pin "2"
-			(uuid "8b781ed2-f883-483f-8128-01a7b06f9f33")
-		)
 		(instances
 			(project ""
 				(path "/3c66c4c7-c51a-454a-a9fb-c58ed70b636d"
@@ -1347,7 +1602,7 @@
 		)
 	)
 	(symbol
-		(lib_id "easyeda2kicad:CPG151101S11-16_C41430893")
+		(lib_id "easyeda2kicad:SW_CUTOUT")
 		(at 138.43 88.9 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -1410,12 +1665,6 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "97b33509-1425-4e4a-9a13-fb2b9d6e9acd")
-		)
-		(pin "2"
-			(uuid "457a6fb7-5c1a-49e5-bec6-b773758183b8")
-		)
 		(instances
 			(project ""
 				(path "/3c66c4c7-c51a-454a-a9fb-c58ed70b636d"
@@ -1426,7 +1675,7 @@
 		)
 	)
 	(symbol
-		(lib_id "easyeda2kicad:CPG151101S11-16_C41430893")
+		(lib_id "easyeda2kicad:SW_CUTOUT")
 		(at 87.63 25.4 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -1489,12 +1738,6 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "bf4ab503-0665-45bb-a1d7-16b0653a3dde")
-		)
-		(pin "2"
-			(uuid "004089b7-d010-4722-8f39-c9353d1e48db")
-		)
 		(instances
 			(project ""
 				(path "/3c66c4c7-c51a-454a-a9fb-c58ed70b636d"
@@ -1505,7 +1748,7 @@
 		)
 	)
 	(symbol
-		(lib_id "easyeda2kicad:CPG151101S11-16_C41430893")
+		(lib_id "easyeda2kicad:SW_CUTOUT")
 		(at 125.73 25.4 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -1568,12 +1811,6 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "b11cb143-75f0-4441-a827-0f5bc109a72e")
-		)
-		(pin "2"
-			(uuid "5c220d3a-ffea-4a4d-b47b-64a8df0afbe2")
-		)
 		(instances
 			(project ""
 				(path "/3c66c4c7-c51a-454a-a9fb-c58ed70b636d"
@@ -1584,7 +1821,7 @@
 		)
 	)
 	(symbol
-		(lib_id "easyeda2kicad:CPG151101S11-16_C41430893")
+		(lib_id "easyeda2kicad:SW_CUTOUT")
 		(at 243.84 50.8 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -1647,12 +1884,6 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "a120d256-5c80-468d-8480-d35ae95370c5")
-		)
-		(pin "2"
-			(uuid "57d613a7-7f8b-474e-9d15-ea450edfa0bd")
-		)
 		(instances
 			(project ""
 				(path "/3c66c4c7-c51a-454a-a9fb-c58ed70b636d"
@@ -1663,7 +1894,7 @@
 		)
 	)
 	(symbol
-		(lib_id "easyeda2kicad:CPG151101S11-16_C41430893")
+		(lib_id "easyeda2kicad:SW_CUTOUT")
 		(at 62.23 25.4 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -1726,12 +1957,6 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "005a6901-5fc7-4895-93e1-c10c367f5813")
-		)
-		(pin "2"
-			(uuid "45932d3b-c12b-4cb0-8c16-4fad4104ebd9")
-		)
 		(instances
 			(project ""
 				(path "/3c66c4c7-c51a-454a-a9fb-c58ed70b636d"
@@ -1742,7 +1967,7 @@
 		)
 	)
 	(symbol
-		(lib_id "easyeda2kicad:CPG151101S11-16_C41430893")
+		(lib_id "easyeda2kicad:SW_CUTOUT")
 		(at 176.53 101.6 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -1805,12 +2030,6 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "ca0e91a3-5619-4b3a-8d02-6ed24416ac41")
-		)
-		(pin "2"
-			(uuid "120be2ef-8a01-43d2-b92f-0ec878a5d082")
-		)
 		(instances
 			(project ""
 				(path "/3c66c4c7-c51a-454a-a9fb-c58ed70b636d"
@@ -1821,7 +2040,7 @@
 		)
 	)
 	(symbol
-		(lib_id "easyeda2kicad:CPG151101S11-16_C41430893")
+		(lib_id "easyeda2kicad:SW_CUTOUT")
 		(at 100.33 63.5 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -1884,12 +2103,6 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "c51f28da-ac22-46e8-91c8-e9930ec31f4b")
-		)
-		(pin "2"
-			(uuid "caba2e2b-e5c8-49eb-8455-e372587bb846")
-		)
 		(instances
 			(project ""
 				(path "/3c66c4c7-c51a-454a-a9fb-c58ed70b636d"
@@ -1900,7 +2113,7 @@
 		)
 	)
 	(symbol
-		(lib_id "easyeda2kicad:CPG151101S11-16_C41430893")
+		(lib_id "easyeda2kicad:SW_CUTOUT")
 		(at 176.53 76.2 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -1963,12 +2176,6 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "d7bb4cd1-9cbb-4cca-8c91-9c66d3687e8d")
-		)
-		(pin "2"
-			(uuid "ec5bbcb8-7106-4794-85d6-dbd1d04d7df7")
-		)
 		(instances
 			(project ""
 				(path "/3c66c4c7-c51a-454a-a9fb-c58ed70b636d"
@@ -1979,7 +2186,7 @@
 		)
 	)
 	(symbol
-		(lib_id "easyeda2kicad:CPG151101S11-16_C41430893")
+		(lib_id "easyeda2kicad:SW_CUTOUT")
 		(at 189.23 63.5 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2042,12 +2249,6 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "4e8a0f05-27d5-4189-a4a8-890cb40d9433")
-		)
-		(pin "2"
-			(uuid "23909200-ddee-46fd-af62-eece5817a2f1")
-		)
 		(instances
 			(project ""
 				(path "/3c66c4c7-c51a-454a-a9fb-c58ed70b636d"
@@ -2058,7 +2259,7 @@
 		)
 	)
 	(symbol
-		(lib_id "easyeda2kicad:CPG151101S11-16_C41430893")
+		(lib_id "easyeda2kicad:SW_CUTOUT")
 		(at 151.13 88.9 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2121,12 +2322,6 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "2817f33a-5067-4ee0-8f2f-372dc3a88871")
-		)
-		(pin "2"
-			(uuid "5f997507-b457-4a2e-9008-1ea655990b1d")
-		)
 		(instances
 			(project ""
 				(path "/3c66c4c7-c51a-454a-a9fb-c58ed70b636d"
@@ -2137,7 +2332,7 @@
 		)
 	)
 	(symbol
-		(lib_id "easyeda2kicad:CPG151101S11-16_C41430893")
+		(lib_id "easyeda2kicad:SW_CUTOUT")
 		(at 62.23 88.9 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2200,12 +2395,6 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "7d88259d-ff65-42c3-af8a-f189e92ee6cd")
-		)
-		(pin "2"
-			(uuid "af2c158d-4685-4869-8368-52e9f70e2779")
-		)
 		(instances
 			(project ""
 				(path "/3c66c4c7-c51a-454a-a9fb-c58ed70b636d"
@@ -2216,7 +2405,7 @@
 		)
 	)
 	(symbol
-		(lib_id "easyeda2kicad:CPG151101S11-16_C41430893")
+		(lib_id "easyeda2kicad:SW_CUTOUT")
 		(at 100.33 88.9 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2279,12 +2468,6 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "fe06056d-7640-4932-8713-505c7f03ba7a")
-		)
-		(pin "2"
-			(uuid "c5016b37-4f8f-4f7e-af5b-38555bcfee6c")
-		)
 		(instances
 			(project ""
 				(path "/3c66c4c7-c51a-454a-a9fb-c58ed70b636d"
@@ -2295,7 +2478,7 @@
 		)
 	)
 	(symbol
-		(lib_id "easyeda2kicad:CPG151101S11-16_C41430893")
+		(lib_id "easyeda2kicad:SW_CUTOUT")
 		(at 74.93 63.5 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2358,12 +2541,6 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "32c8c4ec-9585-46cc-b3a2-f75886a4516b")
-		)
-		(pin "2"
-			(uuid "fe9414e3-8532-4b9c-81bc-cc7934ca7b8a")
-		)
 		(instances
 			(project ""
 				(path "/3c66c4c7-c51a-454a-a9fb-c58ed70b636d"
@@ -2374,7 +2551,7 @@
 		)
 	)
 	(symbol
-		(lib_id "easyeda2kicad:CPG151101S11-16_C41430893")
+		(lib_id "easyeda2kicad:SW_CUTOUT")
 		(at 163.83 101.6 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2437,12 +2614,6 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "1a9632c5-0a21-44ee-89ea-90c951f18b82")
-		)
-		(pin "2"
-			(uuid "d9c87d8d-d0f7-44a2-989e-90bb22499907")
-		)
 		(instances
 			(project ""
 				(path "/3c66c4c7-c51a-454a-a9fb-c58ed70b636d"
@@ -2453,7 +2624,7 @@
 		)
 	)
 	(symbol
-		(lib_id "easyeda2kicad:CPG151101S11-16_C41430893")
+		(lib_id "easyeda2kicad:SW_CUTOUT")
 		(at 176.53 63.5 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2516,12 +2687,6 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "4438f540-8f14-419f-899b-f8702aaee04f")
-		)
-		(pin "2"
-			(uuid "b4e87077-d5ce-45c4-beaf-0566afa3eb92")
-		)
 		(instances
 			(project ""
 				(path "/3c66c4c7-c51a-454a-a9fb-c58ed70b636d"
@@ -2532,7 +2697,7 @@
 		)
 	)
 	(symbol
-		(lib_id "easyeda2kicad:CPG151101S11-16_C41430893")
+		(lib_id "easyeda2kicad:SW_CUTOUT")
 		(at 138.43 50.8 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2595,12 +2760,6 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "0469ae2d-51f7-435e-938b-12225c3a8e72")
-		)
-		(pin "2"
-			(uuid "0c241c3c-8f0a-4f05-9477-784d2b60bb3e")
-		)
 		(instances
 			(project ""
 				(path "/3c66c4c7-c51a-454a-a9fb-c58ed70b636d"
@@ -2611,7 +2770,73 @@
 		)
 	)
 	(symbol
-		(lib_id "easyeda2kicad:CPG151101S11-16_C41430893")
+		(lib_id "power:GND")
+		(at 149.86 110.49 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "47baeb51-b9b2-44db-9144-7f9101099569")
+		(property "Reference" "#PWR01"
+			(at 149.86 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 149.86 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 149.86 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 149.86 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 149.86 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0f289d89-b0d5-4437-b2f8-591ff64c997a")
+		)
+		(instances
+			(project ""
+				(path "/3c66c4c7-c51a-454a-a9fb-c58ed70b636d"
+					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "easyeda2kicad:SW_CUTOUT")
 		(at 125.73 63.5 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2674,12 +2899,6 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "fac8d768-adf8-41e9-a60e-111e9590b08f")
-		)
-		(pin "2"
-			(uuid "7920e310-8734-4eef-9d2c-37a42d964d1b")
-		)
 		(instances
 			(project ""
 				(path "/3c66c4c7-c51a-454a-a9fb-c58ed70b636d"
@@ -2690,7 +2909,7 @@
 		)
 	)
 	(symbol
-		(lib_id "easyeda2kicad:CPG151101S11-16_C41430893")
+		(lib_id "easyeda2kicad:SW_CUTOUT")
 		(at 49.53 76.2 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2753,12 +2972,6 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "a0c065bb-1178-4561-9162-2be89471c06a")
-		)
-		(pin "2"
-			(uuid "0de4f7a3-040f-4156-860c-4af04e5529b2")
-		)
 		(instances
 			(project ""
 				(path "/3c66c4c7-c51a-454a-a9fb-c58ed70b636d"
@@ -2769,7 +2982,7 @@
 		)
 	)
 	(symbol
-		(lib_id "easyeda2kicad:CPG151101S11-16_C41430893")
+		(lib_id "easyeda2kicad:SW_CUTOUT")
 		(at 113.03 50.8 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2832,12 +3045,6 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "960bf744-e15f-4c50-9bae-3d0f50995c79")
-		)
-		(pin "2"
-			(uuid "0c40fe70-5b29-4160-bbeb-fbfbd62c96bc")
-		)
 		(instances
 			(project ""
 				(path "/3c66c4c7-c51a-454a-a9fb-c58ed70b636d"
@@ -2848,7 +3055,7 @@
 		)
 	)
 	(symbol
-		(lib_id "easyeda2kicad:CPG151101S11-16_C41430893")
+		(lib_id "easyeda2kicad:SW_CUTOUT")
 		(at 100.33 76.2 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2911,12 +3118,6 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "5a011079-b0be-4dd2-b66c-860110239c06")
-		)
-		(pin "2"
-			(uuid "ba259044-ef59-4c5d-9587-bba0c32db9fc")
-		)
 		(instances
 			(project ""
 				(path "/3c66c4c7-c51a-454a-a9fb-c58ed70b636d"
@@ -2927,7 +3128,7 @@
 		)
 	)
 	(symbol
-		(lib_id "easyeda2kicad:CPG151101S11-16_C41430893")
+		(lib_id "easyeda2kicad:SW_CUTOUT")
 		(at 227.33 88.9 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2990,12 +3191,6 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "5ccea93b-07f5-4af5-adf5-3eb2943c5836")
-		)
-		(pin "2"
-			(uuid "a3c91140-51fd-486e-992e-2707b44006b8")
-		)
 		(instances
 			(project ""
 				(path "/3c66c4c7-c51a-454a-a9fb-c58ed70b636d"
@@ -3006,7 +3201,7 @@
 		)
 	)
 	(symbol
-		(lib_id "easyeda2kicad:CPG151101S11-16_C41430893")
+		(lib_id "easyeda2kicad:SW_CUTOUT")
 		(at 49.53 50.8 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3069,12 +3264,6 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "828dbcb1-a7da-43de-bb20-9915f14f1c65")
-		)
-		(pin "2"
-			(uuid "7f8b78bb-01c7-4d34-ac36-f34ec59b58ce")
-		)
 		(instances
 			(project ""
 				(path "/3c66c4c7-c51a-454a-a9fb-c58ed70b636d"
@@ -3085,7 +3274,7 @@
 		)
 	)
 	(symbol
-		(lib_id "easyeda2kicad:CPG151101S11-16_C41430893")
+		(lib_id "easyeda2kicad:SW_CUTOUT")
 		(at 138.43 76.2 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3148,12 +3337,6 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "c4f7a052-69cb-47b0-a0e4-83f8ff532079")
-		)
-		(pin "2"
-			(uuid "f8d00952-2f74-4d5c-8fbf-36fcfee7a111")
-		)
 		(instances
 			(project ""
 				(path "/3c66c4c7-c51a-454a-a9fb-c58ed70b636d"
@@ -3164,7 +3347,7 @@
 		)
 	)
 	(symbol
-		(lib_id "easyeda2kicad:CPG151101S11-16_C41430893")
+		(lib_id "easyeda2kicad:SW_CUTOUT")
 		(at 30.48 63.5 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3227,12 +3410,6 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "23c7697a-57f5-484d-9f60-9e82a94d3f0a")
-		)
-		(pin "2"
-			(uuid "11664619-585d-40c7-9b30-0e75ef185193")
-		)
 		(instances
 			(project ""
 				(path "/3c66c4c7-c51a-454a-a9fb-c58ed70b636d"
@@ -3243,7 +3420,7 @@
 		)
 	)
 	(symbol
-		(lib_id "easyeda2kicad:CPG151101S11-16_C41430893")
+		(lib_id "easyeda2kicad:SW_CUTOUT")
 		(at 163.83 50.8 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3306,12 +3483,6 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "87678e8b-117b-448e-b096-43262b2833f3")
-		)
-		(pin "2"
-			(uuid "011496c5-139b-4cd0-9b62-6998e1121a94")
-		)
 		(instances
 			(project ""
 				(path "/3c66c4c7-c51a-454a-a9fb-c58ed70b636d"
@@ -3322,7 +3493,7 @@
 		)
 	)
 	(symbol
-		(lib_id "easyeda2kicad:CPG151101S11-16_C41430893")
+		(lib_id "easyeda2kicad:SW_CUTOUT")
 		(at 208.28 76.2 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3385,12 +3556,6 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "e7ef38b3-523f-41e5-b47f-760bb3077392")
-		)
-		(pin "2"
-			(uuid "d04f4a75-a2d6-4cf0-b59b-f10d8d525037")
-		)
 		(instances
 			(project ""
 				(path "/3c66c4c7-c51a-454a-a9fb-c58ed70b636d"
@@ -3401,7 +3566,7 @@
 		)
 	)
 	(symbol
-		(lib_id "easyeda2kicad:CPG151101S11-16_C41430893")
+		(lib_id "easyeda2kicad:SW_CUTOUT")
 		(at 195.58 101.6 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3464,12 +3629,6 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "8100b259-aeba-44f6-b6bc-d0b44f290590")
-		)
-		(pin "2"
-			(uuid "f73ef3d5-7ab8-4cb8-908e-1c4b7ea3991f")
-		)
 		(instances
 			(project ""
 				(path "/3c66c4c7-c51a-454a-a9fb-c58ed70b636d"
@@ -3480,7 +3639,7 @@
 		)
 	)
 	(symbol
-		(lib_id "easyeda2kicad:CPG151101S11-16_C41430893")
+		(lib_id "easyeda2kicad:SW_CUTOUT")
 		(at 243.84 88.9 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3543,12 +3702,6 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "d7ce2990-50ce-4f49-929c-0a4552105605")
-		)
-		(pin "2"
-			(uuid "b9ead58a-beba-4b40-ac48-811b2df557dc")
-		)
 		(instances
 			(project ""
 				(path "/3c66c4c7-c51a-454a-a9fb-c58ed70b636d"
@@ -3559,7 +3712,7 @@
 		)
 	)
 	(symbol
-		(lib_id "easyeda2kicad:CPG151101S11-16_C41430893")
+		(lib_id "easyeda2kicad:SW_CUTOUT")
 		(at 62.23 101.6 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3622,12 +3775,6 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "fbbe3f41-c4d2-47c1-ad56-30b76d51d818")
-		)
-		(pin "2"
-			(uuid "a9a44f94-b276-4698-a694-19399691df3d")
-		)
 		(instances
 			(project ""
 				(path "/3c66c4c7-c51a-454a-a9fb-c58ed70b636d"
@@ -3638,7 +3785,7 @@
 		)
 	)
 	(symbol
-		(lib_id "easyeda2kicad:CPG151101S11-16_C41430893")
+		(lib_id "easyeda2kicad:SW_CUTOUT")
 		(at 138.43 63.5 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3701,12 +3848,6 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "877e4a69-a2f4-4893-96da-a31eb061fa75")
-		)
-		(pin "2"
-			(uuid "1948442f-eb09-4dc9-82fa-216b6d990648")
-		)
 		(instances
 			(project ""
 				(path "/3c66c4c7-c51a-454a-a9fb-c58ed70b636d"
@@ -3717,7 +3858,7 @@
 		)
 	)
 	(symbol
-		(lib_id "easyeda2kicad:CPG151101S11-16_C41430893")
+		(lib_id "easyeda2kicad:SW_CUTOUT")
 		(at 100.33 25.4 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3780,12 +3921,6 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "8049679d-d510-472e-b576-ad2705d84000")
-		)
-		(pin "2"
-			(uuid "87e6d26a-1c81-4443-b32c-bd944f4060d8")
-		)
 		(instances
 			(project ""
 				(path "/3c66c4c7-c51a-454a-a9fb-c58ed70b636d"
@@ -3796,7 +3931,7 @@
 		)
 	)
 	(symbol
-		(lib_id "easyeda2kicad:CPG151101S11-16_C41430893")
+		(lib_id "easyeda2kicad:SW_CUTOUT")
 		(at 138.43 25.4 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3859,12 +3994,6 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "609ece12-e081-49fb-ab33-5895227d5fc1")
-		)
-		(pin "2"
-			(uuid "618b8e67-1bc8-4fdb-b0e0-2e349ddcb7c0")
-		)
 		(instances
 			(project ""
 				(path "/3c66c4c7-c51a-454a-a9fb-c58ed70b636d"
@@ -3875,7 +4004,7 @@
 		)
 	)
 	(symbol
-		(lib_id "easyeda2kicad:CPG151101S11-16_C41430893")
+		(lib_id "easyeda2kicad:SW_CUTOUT")
 		(at 176.53 88.9 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3938,12 +4067,6 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "f931b98f-8e7f-43fd-a268-5d0dac16d957")
-		)
-		(pin "2"
-			(uuid "65e08703-f344-40f3-bfc3-9868bc5a6e9a")
-		)
 		(instances
 			(project ""
 				(path "/3c66c4c7-c51a-454a-a9fb-c58ed70b636d"
@@ -3954,7 +4077,7 @@
 		)
 	)
 	(symbol
-		(lib_id "easyeda2kicad:CPG151101S11-16_C41430893")
+		(lib_id "easyeda2kicad:SW_CUTOUT")
 		(at 74.93 25.4 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4017,12 +4140,6 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "dd2cee9c-3c5b-46e7-b9fc-9d5df54d7145")
-		)
-		(pin "2"
-			(uuid "8f0f4bf4-8ecb-4707-b1d5-bf73f306efb8")
-		)
 		(instances
 			(project ""
 				(path "/3c66c4c7-c51a-454a-a9fb-c58ed70b636d"
@@ -4033,7 +4150,7 @@
 		)
 	)
 	(symbol
-		(lib_id "easyeda2kicad:CPG151101S11-16_C41430893")
+		(lib_id "easyeda2kicad:SW_CUTOUT")
 		(at 189.23 76.2 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4096,12 +4213,6 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "101569bd-7284-4659-a777-573b0accd6ac")
-		)
-		(pin "2"
-			(uuid "98ebe23f-32d7-4e52-ae8d-1ceb0e24dd89")
-		)
 		(instances
 			(project ""
 				(path "/3c66c4c7-c51a-454a-a9fb-c58ed70b636d"
@@ -4112,7 +4223,7 @@
 		)
 	)
 	(symbol
-		(lib_id "easyeda2kicad:CPG151101S11-16_C41430893")
+		(lib_id "easyeda2kicad:SW_CUTOUT")
 		(at 151.13 50.8 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4175,12 +4286,6 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "66b95c94-ae05-404c-87da-1eefdd40317f")
-		)
-		(pin "2"
-			(uuid "1a7f7c5f-602d-4d7c-96bf-0e0e13c5b1fd")
-		)
 		(instances
 			(project ""
 				(path "/3c66c4c7-c51a-454a-a9fb-c58ed70b636d"
@@ -4191,7 +4296,7 @@
 		)
 	)
 	(symbol
-		(lib_id "easyeda2kicad:CPG151101S11-16_C41430893")
+		(lib_id "easyeda2kicad:SW_CUTOUT")
 		(at 113.03 76.2 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4254,12 +4359,6 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "5339cd6d-50df-4536-a2a9-46eeae0cf956")
-		)
-		(pin "2"
-			(uuid "33ff77b9-e73f-4783-a094-e3b1b3ced23a")
-		)
 		(instances
 			(project ""
 				(path "/3c66c4c7-c51a-454a-a9fb-c58ed70b636d"
@@ -4270,7 +4369,7 @@
 		)
 	)
 	(symbol
-		(lib_id "easyeda2kicad:CPG151101S11-16_C41430893")
+		(lib_id "easyeda2kicad:SW_CUTOUT")
 		(at 49.53 25.4 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4333,12 +4432,6 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "e57719fc-beb1-40d5-9c25-f061c295a0e6")
-		)
-		(pin "2"
-			(uuid "fea257ee-5ace-4cca-8c72-e5ecd7314862")
-		)
 		(instances
 			(project ""
 				(path "/3c66c4c7-c51a-454a-a9fb-c58ed70b636d"
@@ -4349,7 +4442,7 @@
 		)
 	)
 	(symbol
-		(lib_id "easyeda2kicad:CPG151101S11-16_C41430893")
+		(lib_id "easyeda2kicad:SW_CUTOUT")
 		(at 208.28 63.5 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4411,12 +4504,6 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "f82afb81-0284-4910-88a5-86eaf6c2fcdd")
-		)
-		(pin "2"
-			(uuid "7b776e81-f2e7-42f5-b393-e95665e18be0")
-		)
 		(instances
 			(project ""
 				(path "/3c66c4c7-c51a-454a-a9fb-c58ed70b636d"
@@ -4427,7 +4514,7 @@
 		)
 	)
 	(symbol
-		(lib_id "easyeda2kicad:CPG151101S11-16_C41430893")
+		(lib_id "easyeda2kicad:SW_CUTOUT")
 		(at 74.93 50.8 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4490,12 +4577,6 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "edaca7c8-fda6-425a-9c54-86296e10ab85")
-		)
-		(pin "2"
-			(uuid "91adf051-2919-4325-b282-e326df65b788")
-		)
 		(instances
 			(project ""
 				(path "/3c66c4c7-c51a-454a-a9fb-c58ed70b636d"
@@ -4506,7 +4587,7 @@
 		)
 	)
 	(symbol
-		(lib_id "easyeda2kicad:CPG151101S11-16_C41430893")
+		(lib_id "easyeda2kicad:SW_CUTOUT")
 		(at 189.23 25.4 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4569,12 +4650,6 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "929393fa-adf9-4abf-b410-84457b9e41bc")
-		)
-		(pin "2"
-			(uuid "12415498-e12f-4573-b714-adf568fa89c4")
-		)
 		(instances
 			(project ""
 				(path "/3c66c4c7-c51a-454a-a9fb-c58ed70b636d"
@@ -4585,7 +4660,7 @@
 		)
 	)
 	(symbol
-		(lib_id "easyeda2kicad:CPG151101S11-16_C41430893")
+		(lib_id "easyeda2kicad:SW_CUTOUT")
 		(at 62.23 76.2 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4648,12 +4723,6 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "d53850d8-868c-4c7e-b76b-94d7538fd260")
-		)
-		(pin "2"
-			(uuid "c979e4f2-c9ee-4394-8799-a2458360885b")
-		)
 		(instances
 			(project ""
 				(path "/3c66c4c7-c51a-454a-a9fb-c58ed70b636d"
@@ -4664,7 +4733,7 @@
 		)
 	)
 	(symbol
-		(lib_id "easyeda2kicad:CPG151101S11-16_C41430893")
+		(lib_id "easyeda2kicad:SW_CUTOUT")
 		(at 113.03 63.5 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4727,12 +4796,6 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "74adc98b-047d-4c1d-9549-314aa5edd50c")
-		)
-		(pin "2"
-			(uuid "ab394a63-a353-44ee-866a-89ac01486c4b")
-		)
 		(instances
 			(project ""
 				(path "/3c66c4c7-c51a-454a-a9fb-c58ed70b636d"
@@ -4743,7 +4806,7 @@
 		)
 	)
 	(symbol
-		(lib_id "easyeda2kicad:CPG151101S11-16_C41430893")
+		(lib_id "easyeda2kicad:SW_CUTOUT")
 		(at 163.83 76.2 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4806,12 +4869,6 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "cf30e63f-7a67-429b-8ee6-c38c0c95bf39")
-		)
-		(pin "2"
-			(uuid "df7c281c-4968-4994-a097-9ca01ff34f74")
-		)
 		(instances
 			(project ""
 				(path "/3c66c4c7-c51a-454a-a9fb-c58ed70b636d"
@@ -4822,7 +4879,7 @@
 		)
 	)
 	(symbol
-		(lib_id "easyeda2kicad:CPG151101S11-16_C41430893")
+		(lib_id "easyeda2kicad:SW_CUTOUT")
 		(at 87.63 76.2 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4885,12 +4942,6 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "8feb9eea-9037-4f31-9e95-1d38cad0ed80")
-		)
-		(pin "2"
-			(uuid "a42095a1-106a-47b1-be1e-ecb59be4a3e0")
-		)
 		(instances
 			(project ""
 				(path "/3c66c4c7-c51a-454a-a9fb-c58ed70b636d"
@@ -4901,7 +4952,7 @@
 		)
 	)
 	(symbol
-		(lib_id "easyeda2kicad:CPG151101S11-16_C41430893")
+		(lib_id "easyeda2kicad:SW_CUTOUT")
 		(at 30.48 101.6 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4964,12 +5015,6 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "8caffa8b-2f24-49aa-8976-edb69eb15ef8")
-		)
-		(pin "2"
-			(uuid "0009781d-52f7-4932-b391-c42f2e8ef972")
-		)
 		(instances
 			(project ""
 				(path "/3c66c4c7-c51a-454a-a9fb-c58ed70b636d"
@@ -4980,7 +5025,7 @@
 		)
 	)
 	(symbol
-		(lib_id "easyeda2kicad:CPG151101S11-16_C41430893")
+		(lib_id "easyeda2kicad:SW_CUTOUT")
 		(at 74.93 88.9 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5043,12 +5088,6 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "4edfb98c-41f5-46f9-a2cf-9dc61aa61712")
-		)
-		(pin "2"
-			(uuid "01d48a4e-e599-4957-be8e-25c0e61fc1c9")
-		)
 		(instances
 			(project ""
 				(path "/3c66c4c7-c51a-454a-a9fb-c58ed70b636d"
@@ -5059,7 +5098,7 @@
 		)
 	)
 	(symbol
-		(lib_id "easyeda2kicad:CPG151101S11-16_C41430893")
+		(lib_id "easyeda2kicad:SW_CUTOUT")
 		(at 113.03 25.4 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5122,12 +5161,6 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "2e563810-7fc6-4670-a9bc-ed45ae726978")
-		)
-		(pin "2"
-			(uuid "acc686d4-6273-4e5f-91e6-438f92b7e1e2")
-		)
 		(instances
 			(project ""
 				(path "/3c66c4c7-c51a-454a-a9fb-c58ed70b636d"
@@ -5138,7 +5171,7 @@
 		)
 	)
 	(symbol
-		(lib_id "easyeda2kicad:CPG151101S11-16_C41430893")
+		(lib_id "easyeda2kicad:SW_CUTOUT")
 		(at 113.03 101.6 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5200,12 +5233,6 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "e4acf9a0-4693-48d9-be79-5a79ed5dedc4")
-		)
-		(pin "2"
-			(uuid "31de5250-2ca6-43d6-869b-a2dd65389038")
-		)
 		(instances
 			(project ""
 				(path "/3c66c4c7-c51a-454a-a9fb-c58ed70b636d"
@@ -5216,7 +5243,7 @@
 		)
 	)
 	(symbol
-		(lib_id "easyeda2kicad:CPG151101S11-16_C41430893")
+		(lib_id "easyeda2kicad:SW_CUTOUT")
 		(at 30.48 88.9 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5279,12 +5306,6 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "0a07bced-4362-4849-8be1-73bbc372bada")
-		)
-		(pin "2"
-			(uuid "a8e35142-6eaa-4de7-a370-092025a6aff7")
-		)
 		(instances
 			(project ""
 				(path "/3c66c4c7-c51a-454a-a9fb-c58ed70b636d"
@@ -5295,7 +5316,7 @@
 		)
 	)
 	(symbol
-		(lib_id "easyeda2kicad:CPG151101S11-16_C41430893")
+		(lib_id "easyeda2kicad:SW_CUTOUT")
 		(at 49.53 88.9 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5358,12 +5379,6 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "742de6e8-e9e1-48c7-b686-1f81a9838481")
-		)
-		(pin "2"
-			(uuid "d94ecfd5-b136-4008-8f69-3246d7c48b90")
-		)
 		(instances
 			(project ""
 				(path "/3c66c4c7-c51a-454a-a9fb-c58ed70b636d"
@@ -5374,7 +5389,7 @@
 		)
 	)
 	(symbol
-		(lib_id "easyeda2kicad:CPG151101S11-16_C41430893")
+		(lib_id "easyeda2kicad:SW_CUTOUT")
 		(at 176.53 50.8 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5437,12 +5452,6 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "a746cd34-3a0d-48d9-a956-22b0b4fdf518")
-		)
-		(pin "2"
-			(uuid "1869da3c-26ca-46ef-b80b-c394dac92fa7")
-		)
 		(instances
 			(project ""
 				(path "/3c66c4c7-c51a-454a-a9fb-c58ed70b636d"
@@ -5453,7 +5462,7 @@
 		)
 	)
 	(symbol
-		(lib_id "easyeda2kicad:CPG151101S11-16_C41430893")
+		(lib_id "easyeda2kicad:SW_CUTOUT")
 		(at 208.28 25.4 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5516,12 +5525,6 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "af5489f6-773d-4743-a36d-f15c883cbb62")
-		)
-		(pin "2"
-			(uuid "6c384e48-bb7a-482f-baec-b001269200a2")
-		)
 		(instances
 			(project ""
 				(path "/3c66c4c7-c51a-454a-a9fb-c58ed70b636d"
@@ -5532,7 +5535,7 @@
 		)
 	)
 	(symbol
-		(lib_id "easyeda2kicad:CPG151101S11-16_C41430893")
+		(lib_id "easyeda2kicad:SW_CUTOUT")
 		(at 151.13 25.4 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5595,12 +5598,6 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "fc058ffc-f6a1-4e2b-8f72-f8c42cec0723")
-		)
-		(pin "2"
-			(uuid "3e13ed84-14e5-4a87-beed-113386d9fda2")
-		)
 		(instances
 			(project ""
 				(path "/3c66c4c7-c51a-454a-a9fb-c58ed70b636d"
@@ -5611,7 +5608,7 @@
 		)
 	)
 	(symbol
-		(lib_id "easyeda2kicad:CPG151101S11-16_C41430893")
+		(lib_id "easyeda2kicad:SW_CUTOUT")
 		(at 243.84 63.5 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5674,12 +5671,6 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "055c3f8e-138f-4ecf-a389-d083bbb3394c")
-		)
-		(pin "2"
-			(uuid "742c6a0b-7dd3-42d2-bf2b-a537b1c2c56e")
-		)
 		(instances
 			(project ""
 				(path "/3c66c4c7-c51a-454a-a9fb-c58ed70b636d"
@@ -5690,7 +5681,7 @@
 		)
 	)
 	(symbol
-		(lib_id "easyeda2kicad:CPG151101S11-16_C41430893")
+		(lib_id "easyeda2kicad:SW_CUTOUT")
 		(at 163.83 88.9 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5753,12 +5744,6 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "86357704-571d-4d37-ad71-6f45b8dc0933")
-		)
-		(pin "2"
-			(uuid "97999527-b15d-4412-9683-0acfc2c94f79")
-		)
 		(instances
 			(project ""
 				(path "/3c66c4c7-c51a-454a-a9fb-c58ed70b636d"
@@ -5769,7 +5754,7 @@
 		)
 	)
 	(symbol
-		(lib_id "easyeda2kicad:CPG151101S11-16_C41430893")
+		(lib_id "easyeda2kicad:SW_CUTOUT")
 		(at 30.48 25.4 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5832,12 +5817,6 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "3a813b82-680a-443c-a329-e017929d44b2")
-		)
-		(pin "2"
-			(uuid "8d2ed258-a065-467d-b861-6af8e13e7172")
-		)
 		(instances
 			(project ""
 				(path "/3c66c4c7-c51a-454a-a9fb-c58ed70b636d"
@@ -5848,7 +5827,7 @@
 		)
 	)
 	(symbol
-		(lib_id "easyeda2kicad:CPG151101S11-16_C41430893")
+		(lib_id "easyeda2kicad:SW_CUTOUT")
 		(at 125.73 88.9 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5911,12 +5890,6 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "0ceb1ede-9c93-4623-b6d9-cb34a5119817")
-		)
-		(pin "2"
-			(uuid "b5b55cbf-4ea6-4004-91b9-43b7285a79d2")
-		)
 		(instances
 			(project ""
 				(path "/3c66c4c7-c51a-454a-a9fb-c58ed70b636d"
@@ -5927,7 +5900,7 @@
 		)
 	)
 	(symbol
-		(lib_id "easyeda2kicad:CPG151101S11-16_C41430893")
+		(lib_id "easyeda2kicad:SW_CUTOUT")
 		(at 87.63 88.9 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5990,12 +5963,6 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "5c2ff7b7-83e2-43e3-959b-50b1a93b6f1c")
-		)
-		(pin "2"
-			(uuid "e0dad063-44f9-4675-b672-c241247fa205")
-		)
 		(instances
 			(project ""
 				(path "/3c66c4c7-c51a-454a-a9fb-c58ed70b636d"
@@ -6006,7 +5973,7 @@
 		)
 	)
 	(symbol
-		(lib_id "easyeda2kicad:CPG151101S11-16_C41430893")
+		(lib_id "easyeda2kicad:SW_CUTOUT")
 		(at 151.13 63.5 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6069,12 +6036,6 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "3a6f6527-4b3a-4034-a0a6-3344d2ae5f52")
-		)
-		(pin "2"
-			(uuid "dff434e0-31fe-4b6b-9975-309571da0b4a")
-		)
 		(instances
 			(project ""
 				(path "/3c66c4c7-c51a-454a-a9fb-c58ed70b636d"
@@ -6085,7 +6046,7 @@
 		)
 	)
 	(symbol
-		(lib_id "easyeda2kicad:CPG151101S11-16_C41430893")
+		(lib_id "easyeda2kicad:SW_CUTOUT")
 		(at 62.23 50.8 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6148,12 +6109,6 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "b04b4fe6-dff8-4300-a413-bbc080d923bf")
-		)
-		(pin "2"
-			(uuid "086b51c6-bac6-4371-a79c-c08db867b5de")
-		)
 		(instances
 			(project ""
 				(path "/3c66c4c7-c51a-454a-a9fb-c58ed70b636d"
@@ -6164,7 +6119,7 @@
 		)
 	)
 	(symbol
-		(lib_id "easyeda2kicad:CPG151101S11-16_C41430893")
+		(lib_id "easyeda2kicad:SW_CUTOUT")
 		(at 125.73 50.8 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6227,12 +6182,6 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "6e407605-4552-4d5e-990d-30f33c856dc4")
-		)
-		(pin "2"
-			(uuid "dc47a0dd-bc21-4f71-80b1-f87397fa17ba")
-		)
 		(instances
 			(project ""
 				(path "/3c66c4c7-c51a-454a-a9fb-c58ed70b636d"
@@ -6243,7 +6192,7 @@
 		)
 	)
 	(symbol
-		(lib_id "easyeda2kicad:CPG151101S11-16_C41430893")
+		(lib_id "easyeda2kicad:SW_CUTOUT")
 		(at 125.73 76.2 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6306,12 +6255,6 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "b5139643-c588-45c1-a60a-3f67e51ab475")
-		)
-		(pin "2"
-			(uuid "9f0ffd1d-3825-4cf2-949b-7d8277bf708a")
-		)
 		(instances
 			(project ""
 				(path "/3c66c4c7-c51a-454a-a9fb-c58ed70b636d"
@@ -6322,7 +6265,7 @@
 		)
 	)
 	(symbol
-		(lib_id "easyeda2kicad:CPG151101S11-16_C41430893")
+		(lib_id "easyeda2kicad:SW_CUTOUT")
 		(at 151.13 76.2 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6385,12 +6328,6 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "534777a0-5bf7-4990-974e-557880fdcd6f")
-		)
-		(pin "2"
-			(uuid "5aeca487-3980-4095-bfc7-d2c5cd2b73eb")
-		)
 		(instances
 			(project ""
 				(path "/3c66c4c7-c51a-454a-a9fb-c58ed70b636d"
@@ -6401,7 +6338,74 @@
 		)
 	)
 	(symbol
-		(lib_id "easyeda2kicad:CPG151101S11-16_C41430893")
+		(lib_id "power:PWR_FLAG")
+		(at 149.86 110.49 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e83543a6-39ad-4503-98ea-c02079fdec6c")
+		(property "Reference" "#FLG01"
+			(at 151.765 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 153.67 110.4899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 149.86 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 149.86 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 149.86 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bb350c83-c07c-4b36-b3b4-a01118c3337b")
+		)
+		(instances
+			(project ""
+				(path "/3c66c4c7-c51a-454a-a9fb-c58ed70b636d"
+					(reference "#FLG01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "easyeda2kicad:SW_CUTOUT")
 		(at 87.63 50.8 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6464,12 +6468,6 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "d7bcd301-7d74-4001-b166-aa77ec576567")
-		)
-		(pin "2"
-			(uuid "55f001a4-38d7-4360-9941-8c7dad67f99d")
-		)
 		(instances
 			(project ""
 				(path "/3c66c4c7-c51a-454a-a9fb-c58ed70b636d"
@@ -6480,7 +6478,7 @@
 		)
 	)
 	(symbol
-		(lib_id "easyeda2kicad:CPG151101S11-16_C41430893")
+		(lib_id "easyeda2kicad:SW_CUTOUT")
 		(at 30.48 50.8 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6543,12 +6541,6 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "802c0e29-fc09-424e-a89d-023bca06759c")
-		)
-		(pin "2"
-			(uuid "a8118ec2-b10f-46fe-bd4b-94291fa7908b")
-		)
 		(instances
 			(project ""
 				(path "/3c66c4c7-c51a-454a-a9fb-c58ed70b636d"
@@ -6559,7 +6551,7 @@
 		)
 	)
 	(symbol
-		(lib_id "easyeda2kicad:CPG151101S11-16_C41430893")
+		(lib_id "easyeda2kicad:SW_CUTOUT")
 		(at 49.53 63.5 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6622,12 +6614,6 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "dbbe9398-ae13-4222-84a4-73bf90cb0363")
-		)
-		(pin "2"
-			(uuid "d25d7fc1-595f-4928-812c-c6e287d695f9")
-		)
 		(instances
 			(project ""
 				(path "/3c66c4c7-c51a-454a-a9fb-c58ed70b636d"
@@ -6638,7 +6624,7 @@
 		)
 	)
 	(symbol
-		(lib_id "easyeda2kicad:CPG151101S11-16_C41430893")
+		(lib_id "easyeda2kicad:SW_CUTOUT")
 		(at 189.23 50.8 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6700,12 +6686,6 @@
 				)
 				(hide yes)
 			)
-		)
-		(pin "1"
-			(uuid "0d08bb30-223c-4800-90f6-5d7037649642")
-		)
-		(pin "2"
-			(uuid "f2fda1ae-dd42-40a1-b94f-9a8a371047f2")
 		)
 		(instances
 			(project ""
